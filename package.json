@@ -8,9 +8,7 @@
     "prepack": "rm -Rf dist && tsc",
     "watch": "mkdir -p dist && tsc --watch",
     "lint": "eslint 'src/**/*'",
-    "test": "createdb graphile_scheduler_test || true && jest -i",
-    "pub": "npm run prepack && git add . && git commit -m \"Updates\" && npm version patch && npm publish",
-    "push": "git push"
+    "test": "createdb graphile_scheduler_test || true && jest -i"
   },
   "repository": {
     "type": "git",
